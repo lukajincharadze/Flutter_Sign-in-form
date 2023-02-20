@@ -19,32 +19,35 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Sign-In"),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container (
-              child: Text("Sign-In"),
-              color: Colors.blue,
-              padding: EdgeInsets.only(left: 120, right: 120, top: 30, bottom: 30),
-            ),
-            Container (
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: "username"
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container (
+                child: Text("Sign-In", style: TextStyle(fontSize: 28, color: Colors.white),),
+                color: Colors.blue,
+                padding: EdgeInsets.only(left: 100, right: 100, top: 20, bottom: 20),
+              ),
+              Container (
+                width: 250,
+                padding: EdgeInsets.only(top: 20, bottom: 20),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "username"
+                  ),
                 ),
               ),
-            ),
-            Container (
-              child: TextField(
-                decoration: InputDecoration(
-                    hintText: "password"
+              Container (
+                width: 250,
+                padding: EdgeInsets.only(bottom: 20),
+                child: TextField(
+                  decoration: InputDecoration(
+                      hintText: "password"
+                  ),
                 ),
               ),
-            ),
-            Container (
-              child: TextButton(onPressed: () {}, child: Text("Sign In")),
-              ),
-          ],
+            ],
+          ),
         ),
       ),
     );
