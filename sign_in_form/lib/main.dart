@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                 padding: EdgeInsets.only(top: 20, bottom: 20),
                 child: TextField(
                   decoration: InputDecoration(
-                    hintText: "username"
+                      hintText: "username"
                   ),
                 ),
               ),
