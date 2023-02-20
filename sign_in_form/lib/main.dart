@@ -46,8 +46,14 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Container (
-                child: TextButton(onPressed: () {}, child: Text("Sign In")),
+              Container(
+                margin: EdgeInsets.only(right: 80),
+                child: Row (
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    TextButton(onPressed: () {}, child: Text("Sign In")),
+                  ],
+                ),
               ),
             ],
           ),
